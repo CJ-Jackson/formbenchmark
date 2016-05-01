@@ -38,13 +38,7 @@ func (f *ForFormSimple) Fields() []form.FormFieldInterface {
 }
 
 func (f *ForFormSimple) TextField() fields.String {
-	return fields.String{
-		Name:  "Text",
-		Label: "Text",
-		Model: &f.TextModel,
-		Norm:  &f.TextNorm,
-		Err:   &f.TextErr,
-	}
+	return fields.NewString("Text", "Text", &f.TextNorm, &f.TextModel, &f.TextErr)
 }
 
 type ForFormComplex struct {
@@ -76,33 +70,15 @@ func (f *ForFormComplex) Fields() []form.FormFieldInterface {
 }
 
 func (f *ForFormComplex) NumberField() fields.Int {
-	return fields.Int{
-		Name:  "Number",
-		Label: "Number",
-		Model: &f.NumberModel,
-		Norm:  &f.NumberNorm,
-		Err:   &f.NumberErr,
-	}
+	return fields.NewInt("Number", "Number", &f.NumberNorm, &f.NumberModel, &f.NumberErr)
 }
 
 func (f *ForFormComplex) TextField() fields.String {
-	return fields.String{
-		Name:    "Text",
-		Label:   "Text",
-		Model:   &f.TextModel,
-		Norm:    &f.TextNorm,
-		Err:     &f.TextErr,
-	}
+	return fields.NewString("Text", "Text", &f.TextNorm, &f.TextModel, &f.TextErr)
 }
 
 func (f *ForFormComplex) FloatField() fields.Float {
-	return fields.Float{
-		Name:  "Float",
-		Label: "Float",
-		Model: &f.FloatModel,
-		Norm:  &f.FloatNorm,
-		Err:   &f.FloatErr,
-	}
+	return fields.NewFloat("Float", "Float", &f.FloatNorm, &f.FloatModel, &f.FloatErr)
 }
 
 var (

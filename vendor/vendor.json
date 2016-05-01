@@ -9,8 +9,8 @@
 		},
 		{
 			"path": "github.com/cjtoolkit/form/fields",
-			"revision": "173c757e02c410734ecf032d213b09007b7e0e25",
-			"revisionTime": "2016-04-30T14:19:34+01:00"
+			"revision": "a9341f2e216b0d22bc2e4e5db88b52539a5d8b2d",
+			"revisionTime": "2016-05-01T18:11:17+01:00"
 		},
 		{
 			"path": "github.com/gorilla/schema",
