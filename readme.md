@@ -10,7 +10,7 @@ Go Version:
 
 ## Test 1: Simple
 
-`$ $ GOGC=100 go test -benchmem -bench=Simple$`
+`$ GOGC=100 go test -benchmem -bench=Simple$`
 
 ```
 BenchmarkSchemaSimple-8          1000000              1633 ns/op             152 B/op          6 allocs/op
