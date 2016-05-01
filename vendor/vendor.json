@@ -1,0 +1,26 @@
+{
+	"comment": "",
+	"ignore": "test",
+	"package": [
+		{
+			"path": "github.com/cjtoolkit/form",
+			"revision": "c601dce16385d2a87a9f0bdc79c77aafc2859b3d",
+			"revisionTime": "2016-04-30T14:16:54+01:00"
+		},
+		{
+			"path": "github.com/cjtoolkit/form/fields",
+			"revision": "173c757e02c410734ecf032d213b09007b7e0e25",
+			"revisionTime": "2016-04-30T14:19:34+01:00"
+		},
+		{
+			"path": "github.com/gorilla/schema",
+			"revision": "08023a0215e7fc27a9aecd8b8c50913c40019478",
+			"revisionTime": "2016-04-26T16:15:12-07:00"
+		},
+		{
+			"path": "github.com/monoculum/formam",
+			"revision": "c9236b3ed77d58a303689e381e2f0355b728b253",
+			"revisionTime": "2016-02-16T20:53:20Z"
+		}
+	]
+}
