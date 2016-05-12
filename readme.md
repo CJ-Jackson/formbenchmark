@@ -86,7 +86,7 @@ As the benchmark above shows, [CJToolkit Form 3.0](https://github.com/cjtoolkit/
 
 In most cases it's outperformed Schema and in some cases it can outperform Formam, especially if you tune up the Garbage Collection to `800` (default is `100`) than CJToolkit Form get faster most likely because it's consistently `3 allocs/op`.
 
-Introducing unused data to `url.Values` (or even `HTTP POST`) will cause a negative impact to Schema, thus memory allocation goes up dramatically, therefore performance goes down dramatically and this is quite scary, imo that a very serious design flaw on Gorilla part, I mean any user can tamper with HTTP POST and cause havoc.  But only has little to no impact with CJToolkit Form and Formam.
+Introducing unused data to `url.Values` (or even `HTTP POST`) will cause a negative impact to Schema, thus memory allocation goes up dramatically, therefore performance goes down dramatically and this is quite scary.  But only has little to no impact with CJToolkit Form and Formam.
 
 CJToolkit Form has got a bigger codebase than the other two, but the codes are highly maintainable, testable and make no use of `reflect`, while the other two uses `reflect`.  I firmly believe that a robust, easy-to-test and modular designed codebase is much better than having a quick and dirty codebase with the abuse of `reflect`.
 
